@@ -2,14 +2,19 @@
 
 This repository provides documentation, workflow examples, [Postman](https://www.postman.com/) collections, and other resources for working with Impact Api v2.
 
-Impact Api v2 is designed to supplant and replace [Impact Api v1](https://github.com/Implan-Group/api), but is currently under construction and does not yet have feature parity.
-
 > [!NOTE]
 > To use Impact Api v2, you must have a valid IMPLAN subscription with API access.
 > Please contact <support@implan.com> to add API access to your subscription or with any other questions.
+
+> [!NOTE]
+> The [Impact Api v1](https://github.com/Implan-Group/api) is still available and will be for some time.
+
+> [!WARNING]
+> Impact Api v2 is designed to supplant and replace [Impact Api v1](https://github.com/Implan-Group/api), but is currently under construction and does not yet have feature parity.
+> There are substantial differences between this newer v2 API and the old v1 API -- do not make any assumptions.
 
 ---
 
 # Impact Api v2 Wiki
 
-The [Wiki](https://github.com/Implan-Group/impact-api-v2/wiki) for Impact Api v2 is available right here on GitHub.
+The [Wiki](https://github.com/Implan-Group/impact-api-v2/wiki) for Impact Api v2 will available right here on GitHub.
