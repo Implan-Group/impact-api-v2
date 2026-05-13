@@ -1,0 +1,362 @@
+{
+  "info": {
+    "_postman_id": "ec484698-b017-4414-bcf6-a68d1f4244f2",
+    "name": "Impact Api v2 - Results Only",
+    "description": "IMPLAN's Impact Api -- Version 2.0\n\nContact Support:\n Name: IMPLAN Support\n Email: support@implan.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "28583816"
+  },
+  "item": [
+    {
+      "name": "impact-api",
+      "item": [
+        {
+          "name": "v2",
+          "item": [
+            {
+              "name": "downloads",
+              "item": [
+                {
+                  "name": "status",
+                  "item": [
+                    {
+                      "name": "Retrieves the current status of a Large Download Request.",
+                      "request": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/impact-api/v2/downloads/status?downloadCode=XXXXXXXX",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "impact-api",
+                            "v2",
+                            "downloads",
+                            "status"
+                          ],
+                          "query": [
+                            {
+                              "key": "downloadCode",
+                              "value": "XXXXXXXX",
+                              "description": "The `DownloadCode` from the original request."
+                            }
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "impact-results",
+              "item": [
+                {
+                  "name": "summary-economic-indicators",
+                  "item": [
+                    {
+                      "name": "Returns the Summary Economic Indicators Results",
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      },
+                      "request": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n    \"runId\": 0,\n    \"dollarYear\": 2026,\n    \"groups\": null,\n    \"models\": null,\n    \"events\": null,\n    \"eventTags\": null,\n    \"impactTypes\": null,\n    \"fileType\": \"csv\",\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/impact-api/v2/impact-results/summary-economic-indicators",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "impact-api",
+                            "v2",
+                            "impact-results",
+                            "summary-economic-indicators"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "detailed-economic-indicators",
+                  "item": [
+                    {
+                      "name": "Returns the Detailed Economic Indicators Results",
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      },
+                      "request": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n    \"runId\": 0,\n    \"dollarYear\": 2026,\n    \"groups\": null,\n    \"models\": null,\n    \"events\": null,\n    \"eventTags\": null,\n    \"impactTypes\": null,\n    \"fileType\": \"csv\",\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/impact-api/v2/impact-results/detailed-economic-indicators",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "impact-api",
+                            "v2",
+                            "impact-results",
+                            "detailed-economic-indicators"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "summary-taxes",
+                  "item": [
+                    {
+                      "name": "Returns the Summary Taxes Results",
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      },
+                      "request": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n    \"runId\": 0,\n    \"dollarYear\": 2026,\n    \"groups\": null,\n    \"models\": null,\n    \"events\": null,\n    \"eventTags\": null,\n    \"impactTypes\": null,\n    \"fileType\": \"csv\",\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/impact-api/v2/impact-results/summary-taxes",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "impact-api",
+                            "v2",
+                            "impact-results",
+                            "summary-taxes"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "detailed-taxes",
+                  "item": [
+                    {
+                      "name": "Returns the Detailed Taxes Results",
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      },
+                      "request": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n    \"runId\": 0,\n    \"dollarYear\": 2026,\n    \"groups\": null,\n    \"models\": null,\n    \"events\": null,\n    \"eventTags\": null,\n    \"impactTypes\": null,\n    \"fileType\": \"csv\",\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/impact-api/v2/impact-results/detailed-taxes",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "impact-api",
+                            "v2",
+                            "impact-results",
+                            "detailed-taxes"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          "const ENV_VAR_KEYS = {\r",
+          "  TokenUrl: \"tokenUrl\",\r",
+          "  Username: \"username\",\r",
+          "  Password: \"password\",\r",
+          "  Token: \"bearerToken\",\r",
+          "};\r",
+          "\r",
+          "const main = async () => {\r",
+          "  if (!isTokenExpired()) {\r",
+          "    console.log(\"Bypassing Bearer Token fetch because the stored token has not expired.\");\r",
+          "    return;\r",
+          "  }\r",
+          "\r",
+          "  console.log(\"Stored Bearer Token has expired, fetching a new token...\");\r",
+          "  await fetchToken();\r",
+          "};\r",
+          "\r",
+          "const getEnvVar = (key) => pm.environment.get(key);\r",
+          "\r",
+          "const setEnvVar = (key, val) => pm.environment.set(key, val);\r",
+          "\r",
+          "const isTokenExpired = () => {\r",
+          "  const token = getEnvVar(ENV_VAR_KEYS.Token);\r",
+          "\r",
+          "  if (!token) return true;\r",
+          "\r",
+          "  const jwt = decodeToken(token);\r",
+          "  console.log(\"Stored Bearer Token: \", jwt);\r",
+          "  return Date.now() >= jwt.exp * 1000;\r",
+          "};\r",
+          "\r",
+          "const decodeToken = (token) => JSON.parse(atob(token.split(\".\")[1]));\r",
+          "\r",
+          "const fetchToken = async () => {\r",
+          "  try {\r",
+          "    const response = await new Promise((resolve, reject) => {\r",
+          "      pm.sendRequest(\r",
+          "        {\r",
+          "          url: getEnvVar(ENV_VAR_KEYS.TokenUrl),\r",
+          "          method: \"POST\",\r",
+          "          header: {\r",
+          "            \"Content-Type\": \"application/json\",\r",
+          "          },\r",
+          "          body: {\r",
+          "            mode: \"raw\",\r",
+          "            raw: JSON.stringify({\r",
+          "              username: getEnvVar(ENV_VAR_KEYS.Username),\r",
+          "              password: getEnvVar(ENV_VAR_KEYS.Password),\r",
+          "            }),\r",
+          "          },\r",
+          "        },\r",
+          "        (err, response) =>\r",
+          "          err || response.code < 200 || response.code >= 300\r",
+          "            ? reject(err ?? response)\r",
+          "            : resolve(response)\r",
+          "      );\r",
+          "    });\r",
+          "\r",
+          "    const newToken = response.text().replace('Bearer ', '');\r",
+          "    console.log(\"New Bearer Token: \", decodeToken(newToken));\r",
+          "    setEnvVar(ENV_VAR_KEYS.Token, newToken);\r",
+          "  } catch (e) {\r",
+          "    console.error(e);\r",
+          "  }\r",
+          "};\r",
+          "\r",
+          "main();"
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "/"
+    }
+  ]
+}
